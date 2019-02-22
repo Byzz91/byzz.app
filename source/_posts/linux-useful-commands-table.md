@@ -8,10 +8,10 @@ title: 리눅스 유용한 명령어 모음
 | curl    | `$ curl -o naver https://www.naver.com/` | 진행상황을 출력하면서 다운로드 진행 |
 | 배포판 버전체크 | `$ cat /etc/issue` | |
 | 배포판 이름확인 | `$ cat /etc/*-release`| |
-| 프로세스 보기 | `$ ps -ef` `$ ps -ef | grep ${keyword}` | |
+| 프로세스 보기 | `$ ps -ef` `$ ps -ef &#124; grep ${keyword}` | |
 | 로그 실시간 출력 | `$ tail -F /var/log/nginx/access.log` | |
 | 포트 체크하기 | `$ netstat -nlp` | 또는 `$ nmap` 패키지로 확인 가능 |
-| CPU 코어 갯수 확인 | `$ cat /proc/cpuinfo | grep processor | wc -l` | |
+| CPU 코어 갯수 확인 | `$ cat /proc/cpuinfo &#124; grep processor &#124; wc -l` | |
 | *hostname* 변경 | `$ vim /etc/hostname` | |
 | (*\**) php7 관련 파일 지우기 | `$ find / -name php7* -exec rm -rf {} \` | 응용 사용 |
 | *service* 리스트 | `$ ls /etc/rc*.d` or `$ service --status-all` | |
